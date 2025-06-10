@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford</title>    
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script src="js/form.js"></script>
+</head>
+<body>
+    <header>       
+        <div>
+            <img src="img/logo-ford-256.png" width="150" class="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="lancamento.html">Lançamento</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="forms">
+            <div>
+                <img src="img/xls_2_2_diesel.jpg">
+            </div>
+            <div>
+                <h2 class="titulo">Sobre Você</h2>
+            <form onsubmit="Post(this);">
+                <input id="nomeid" type="text" name="nome" placeholder="Nome*" class="fordform" required>
+                <input type="text" name="email" placeholder="Email*" class="fordform" required>
+                <input type="text" name="cpf" placeholder="CPF*" class="fordform" required>
+                <input type="text" name="sobrenome" placeholder="Sobrenome*" class="fordform" required>
+                <input type="text" name="telefone" placeholder="Telefone*" class="fordform" required>
+                <select name="contato" class="fordform" required>
+                    <option disabled selected>Tipo do contato:</option>
+                    <option value="">Elogio</option>
+                    <option value="">Reclamação</option>
+                    <option value="">Solicitação</option>
+                </select>
+                <textarea class="inputcont" placeholder="Mensagem*" rows="5"></textarea>
+                <br>
+                <div class="consentimento">
+                <p>
+                Os dados serão mantidos em nossa base de dados, só enquanto 
+                for desejado por você. A qualquer momento, será possível editar 
+                ou remover tais dados.
+                </p>
+                <label> 
+                    <input type="checkbox" id="checkbox1"> 
+                    Sim. Li e concordo com os <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank">Termos e Condições</a>. 
+                </label> 
+                <label> 
+                <input type="checkbox" id="checkbox2"> 
+                Sim. Também quero receber descontos e novidades. 
+                </label>
+                </div><br><br><br>
+            <button class="botao_enviar" onclick="Enviar()" type="submit" disabled>Enviar</button>
+            </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footercontatos">
+            <p>
+                Redes Sociais: 
+            </p>
+                <a href="#"><img class="imgfooter" src="img/facebook-50.png" alt="facebook"></a>         
+                <a href="#"><img class="imgfooter" src="img/instagram-logo-50.png" alt="instagram"> </a>
+                <a href="#"><img class="imgfooter" src="img/youtube-squared-50.png" alt="youtube"> </a>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright © 2025 Ford Motor Company
+            </p>
+        </div>
+        <div class="logofooter">      
+            <img src="img/ford-96.png" alt="logo_ford">
+        </div>  
+    </footer>
+    <script> 
+        const checkbox1 = document.getElementById("checkbox1"); 
+        const botao = document.getElementsByClassName("botao_enviar")[0]; 
+        checkbox1.addEventListener("change", () => { 
+        botao.disabled = !checkbox1.checked; 
+        }); 
+    </script>   
+</body>
+</html>

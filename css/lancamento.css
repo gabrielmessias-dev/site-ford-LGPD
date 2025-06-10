@@ -1,0 +1,200 @@
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+ul.modelcars {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ul.modelcars li {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+
+img.photocar {
+    display: block;
+    width: 250px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1b357e;
+}
+
+.infocar div {
+    display: inline-block;
+}
+
+.info {
+    width: 200px;
+    vertical-align: top;
+}
+
+.textmodel {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #1351d8;
+    
+}
+.textprice {
+    display: block;
+    text-align: left;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+  }
+
+#compare {
+    overflow-x: auto;
+}
+
+#compare table {
+    width: 100%;
+    min-width: 600px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  td:nth-child(1) {  
+    font-weight: 700;
+    width: 40%;
+  }
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+div#compare {
+    position: absolute;
+    display: none;
+    width: 50vw;
+    max-width: 800px;
+    min-width: 400px;
+    height: 80vh;
+    max-height: 700px;
+    min-height: 350px;
+    background: #fff;
+    top: calc(100vh - 80%);
+    left: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+    box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+}
+
+.botao_comparar {
+    background-color: #1351d8;
+    color: white;
+    width: 100%;
+    max-width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao_comparar:hover {
+    color: #ccc;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.botao_comparar:focus {
+    outline: 2px solid #1b357e;
+}
+
+.botao_fechar {
+    background-color: #1351d8;
+    color: white;
+    width: 100%;
+    max-width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao_fechar:hover {
+    color: #ccc;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.botao_fechar:focus {
+    outline: 2px solid #1b357e;
+}
+
+@media screen and (max-width: 768px) {
+    #compare {
+        width: 90vw;
+        left: 5vw;
+        height: auto;
+    }
+
+    .infocar {
+        display: block;
+        text-align: center;
+    }
+
+    .infocar .info {
+        display: block;
+        width: 100%;
+    }
+
+    ul.modelcars li {
+        display: block;
+        margin: 20px auto;
+    }
+
+    img.photocar {
+        width: 90%;
+        margin: auto;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    header nav li {
+        display: block;
+    }
+
+    header nav a {
+        font-size: 18px;
+    }
+
+}
