@@ -40,10 +40,6 @@ O projeto contém páginas de apresentação de veículos, comparação de model
 📸 *Print da tabela de comparação:*
 ![Tabela de Comparação](prints/comparacao.png)
 
-📸 *Print da página de contato:*
-![Contato](prints/conatato.png)
-
-
 ---
 
 ### 🔹 Página de Contato
